@@ -786,15 +786,11 @@ case "i":
 
           {/* OrbitControls only active when nothing is selected */}
           <OrbitControls
-  ref={orbitRef}
-  enabled={selectedModelIndex === null}
-  enableRotate={!topDown}
-  enablePan={true}
-  enableZoom={true}
+
   maxPolarAngle={Math.PI / 2}
-  minPolarAngle={0}
+  minPolarAngle={45450}
   minDistance={1}
-  maxDistance={100}
+  maxDistance={0}
 />
 
 

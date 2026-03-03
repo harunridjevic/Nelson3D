@@ -23,19 +23,19 @@ const CameraControls = ({ onRotate, onPan, onZoom }: Props) => {
       <div>
         <strong style={{ color: "white" }}>Rotate</strong>
         <div style={{ display: "flex", gap: 5, marginTop: 4 }}>
-          <button onClick={() => onRotate(-0.1, 0)}>⟲ Left</button>
+          <button onClick={() => onRotate(0, 0)}>⟲ Left</button>
           <button onClick={() => onRotate(0.1, 0)}>⟳ Right</button>
-          <button onClick={() => onRotate(0, -0.1)}>⬆ Up</button>
+          <button onClick={() => onRotate(0, 1)}>⬆ Up</button>
           <button onClick={() => onRotate(0, 0.1)}>⬇ Down</button>
         </div>
       </div>
       <div>
         <strong style={{ color: "white" }}>Pan</strong>
         <div style={{ display: "flex", gap: 5, marginTop: 4 }}>
-          <button onClick={() => onPan(-1, 0)}>← Left</button>
-          <button onClick={() => onPan(1, 0)}>→ Right</button>
-          <button onClick={() => onPan(0, 1)}>↑ Up</button>
-          <button onClick={() => onPan(0, -1)}>↓ Down</button>
+          <button onClick={() => onPan(-1, 1)}>← Left</button>
+          <button onClick={() => onPan(1, 1)}>→ Right</button>
+          <button onClick={() => onPan(-1, 1)}>↑ Up</button>
+          <button onClick={() => onPan(-1, -1)}>↓ Down</button>
         </div>
       </div>
       <div>
